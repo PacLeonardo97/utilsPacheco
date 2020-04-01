@@ -7,7 +7,12 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "brazil",
+    "utils",
+    "date"
+  ],
+  "author": "pacleonardo97",
   "license": "ISC",
   "dependencies": {
     "date-fns": "^2.11.1",
