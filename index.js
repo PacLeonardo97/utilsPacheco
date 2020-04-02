@@ -1,5 +1,5 @@
-const pt_BR = require("date-fns/locale/pt-BR");
-const { utcToZonedTime } = require("date-fns-tz");
+import pt_BR from "date-fns/locale/pt-BR";
+import { utcToZonedTime } from "date-fns-tz";
 
 const formatDateTimeZone = date => {
   const parsedDate = utcToZonedTime(parseISO(`${date}Z`), "America/Fortaleza");
@@ -44,7 +44,7 @@ const formatPhoneNumber = str => {
 const formatCurrecy = value =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
-module.exports = {
+export {
   formatDateTimeZone,
   formatDateTimeZoneWithPreposition,
   nameThreePoints,
